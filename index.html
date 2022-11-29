@@ -1,0 +1,391 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Contributing to ArviZ and Open Source | Data Umbrella</title>
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link href="https://use.fontawesome.com/releases/v6.2.1/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="reveal.js/dist/reveal.css">
+    <link rel="stylesheet" href="reveal.js/dist/theme/solarized.css">
+    <link rel="stylesheet" href="css/reveal-override.css">
+  </head>
+  <body>
+
+    <div class="reveal logo">
+      <div class="slides">
+
+        <section>
+          <h2>Contributing to ArviZ and OSS</h2>
+          <h3>Social and Technical Sides</h3>
+          <p>at: <b>Data Umbrella</b></p>
+          <p>by: <b>Oriol Abril Pla</b></p>
+          <div>
+            <a href="https://oriolabrilpla.cat/"><i class="fa-solid fa-globe"></i></a>
+            <a href="https://github.com/OriolAbril"><i class="fa-brands fa-github"></i></a>
+            <a href="https://twitter.com/OriolAbril"><i class="fa-brands fa-twitter"></i></a>
+          </div>
+
+            <aside class="notes">
+              I have tried to organize the talk from more general remarks
+              (which I'll go over faster) to more specific remarks.
+              Hopefully this will make the talk useful as an orientative
+              source even if you are interested in other open source libraries
+              and directly actionable for potential ArviZ contributors.
+
+              This talk is mostly based on my personal experience and
+              the challenges I struggled with when I started contributing
+              to ArviZ, and that in fact, some I still face when trying
+              to make my first contributions to other open source projects.
+            </aside>
+        </section>
+
+        <section>
+          <h1>About me</h1>
+          <ul class="no-marker">
+            <li>2013: Python (and Matlab) programming</li>
+            <li>2016: Git for personal projects</li>
+            <li>2019: Started contributing to ArviZ</li>
+            <li>2019 (summer): GSoC with ArviZ</li>
+            <li>2019-20: Contributed to other OSS libraries</li>
+          </ul>
+
+          <aside class="notes">
+            I started programming with Python in 2013, right before
+            starting my Bachelor. Then used Matlab and Python during
+            my Bachelor. At that time I barely even knew what OSS was.
+
+            Toward the end of my Bachelor I started using Git
+            to version control some of my projects. That is,
+            I used Git as a tool for completely linear version control,
+            no collaboration, no branches...
+
+            In 2019, I started contributing to ArviZ and learnt about
+            Google Summer of Code which is how I got started in
+            Open Source.
+
+            Mention panel?
+          </aside>
+        </section>
+
+        <section>
+          <h3>Why contribute?</h3>
+          <h3>Where to contribute?</h3>
+          <h3>What to contribute?</h3>
+          <h3 style="color: #4b0002">How to contribute?</h3>
+
+          <aside class="notes">
+            Contributing guides generally focus on "how to contribute",
+            sometimes covering a bit of the "what to contribute".
+
+            However, even though I did struggle with Git branches and
+            PRs, I struggled much more finding where and what to contribute.
+            Still today, when we organize sprints for example I also
+            have to dedicate more time to issue triaging _deciding
+            what we'll have issue participants work on_ than
+            on writing the how to contribute guide.
+
+            One of the main issues with the "non-how" questions is
+            that there are many possible answers. And all of them
+            are correct generally speaking, but not all of them
+            need to be right _for everyone_.
+          </aside>
+        </section>
+
+        <section>
+        <section data-auto-animate>
+          <h2>Why contribute?</h2>
+
+          <aside class="notes">
+          </aside>
+        </section>
+
+        <section data-auto-animate>
+          <h2>Why contribute?</h2>
+          <p>Learning new things</p>
+          <p>Advancing your career</p>
+          <p>Building a community</p>
+          <p>...and more</p>
+
+          <aside class="notes">
+            There are many reasons for contributing to Open Source,
+            and it is a question that doesn't directly define the next
+            steps, but I think it is important to keep this in the
+            back of your mind when considering the next questions.
+
+            For example, if you want to build a community you'll probably
+            be much better off in a community drive project, which
+            values community related contributions and with a clear
+            governance so you can after a while become part of the team
+            or get to lead activities.
+
+            If you want to advance your career you might be better off
+            contributing to a library backed by a company you'd like to
+            join.
+
+            These dimensions might overlap, but the often do not and you
+            could find yourself not reaching your goals or not having
+            your work recognized no matter how hard you work.
+          </aside>
+        </section>
+        </section>
+
+        <section>
+        <section data-auto-animate>
+          <h2>Where to contribute?</h2>
+
+          <aside class="notes">
+            We have already discussed briefly choosing _which_ library
+            to contribute to. So I'd like to focus this section
+            on the _types_ of contribution.
+
+            As I mentioned before, contribution guides focus on
+            how to contribute, but we can generally be even more
+            specific than that even. They focus on "how to
+            contribute code".
+
+            There are many, so many, more things that are needed
+            in open source projects.
+          </aside>
+        </section>
+
+        <section data-auto-animate>
+          <h2>Where to contribute?</h2>
+          <p>Documentation</p>
+          <p>Event planning</p>
+          <p>Issue triaging</p>
+          <p>Helping users/contributors on forums</p>
+          <p>Code</p>
+
+          <aside class="notes">
+            It is important to keep these in mind too
+            for multiple reasons.
+
+            If your goal is to learn things, answering
+            questions of the forum for the library
+            is a great way to do so. A huge part
+            of my current knowledge about Python and PyData
+            libraries comes from having answered
+            questions on PyMC and Stan discourse sites,
+            ArviZ issues...
+
+            Even if your end goal is to contribute code,
+            you'll often need to dive deep into the
+            codebase before being able to make the changes.
+            You can contribute documentation while checking
+            the codebase to start contributing from the get-go
+            and keep the motivation up.
+          </aside>
+        </section>
+        </section>
+
+        <section>
+        <section data-auto-animate>
+          <h2>What to contribute?</h2>
+
+          <aside class="notes">
+            So far everything has been quite OSS general,
+            not universal though.
+            There are still some libraries that
+            value code contributions only.
+
+            Here I'll start being a bit more specific to ArviZ.
+            In my experience, "what to contribute" is mainly chosen
+            in one of these 3 ways
+          </aside>
+        </section>
+
+        <section data-auto-animate>
+          <h2>What to contribute?</h2>
+          <ul class="no-marker">
+            <li>Issue browsing</li>
+            <li>Issue finding/creation</li>
+            <li>Issue direction</li>
+          </ul>
+
+          <aside class="notes">
+            1st: browsing the open issues in the github repository
+            until you find one that both catches your eye and
+            seems doable.
+
+            2nd: working on something you found yourself that needs
+            improving, often opening an issue before actually starting
+            to work.
+
+            3rd: Working on something that was recommended to you.
+
+            My first contribution to ArviZ was of the 2nd type.
+            I ran into a bug doing something I needed to get
+            done for my Master thesis, so I sent a PR with
+            the fix.
+
+            After that I moved to the 1st type for quite a bit.
+            Especially for introverted people like me,
+            being able to lurk and to not have anyone know
+            how many issues I am discarding because I have no
+            idea how to go about them is very attracting.
+          </aside>
+        </section>
+
+        <section data-auto-animate>
+          <h2>What to contribute?</h2>
+          <ul class="no-marker">
+            <li>Issue browsing</li>
+              <ul><li>as a starting point</li></ul>
+            <li>Issue finding/creation</li>
+              <ul><li>if you know where to contribute</li></ul>
+            <li><b>Issue direction</b></li>
+          </ul>
+
+          <aside class="notes">
+            If you already know the type of contributions you
+            want to make, let's say documentation,
+            then I recommend you browse the docs
+            directly to find things that are not clear,
+            try reproducing the code examples and see if they work...
+            When you find something (when, not if because
+            you will find something) then open an issue
+            before starting to work. This will 1) notify us
+            about the issue and your proposed fix and 2)
+            signal to other potential contributors that you
+            are working on this.
+
+            If you are not completely sure or are considering
+            multiple types of contributions, then
+            you can browse the open issues to see if
+            something catches your eye. However,
+            note that ArviZ is a small library, and
+            we don't have much resources to triage issues.
+            If you don't find something it doesn't mean
+            there is nothing for you to do. There are
+            many pending tasks that don't have an open issue,
+            there are issues that should have been closed
+            instead, or even the labels might be outdated.
+
+            If you like ArviZ and want to contribute to it,
+            I'd recommend you reach out on gitter (or on
+            an issue that is close but not quite what you want to do).
+            Explain briefly what is your background and interests
+            and we'll do our best to direct (or open and direct)
+            you to an issue to work on.
+          </aside>
+        </section>
+        </section>
+
+        <section>
+        <section data-auto-animate>
+          <h2>How to contribute?</h2>
+          <p>Starting point: <a href="https://python.arviz.org/en/latest/contributing/index.html">ArviZ contributing guide</a></p>
+
+          <aside class="notes">
+            The ArviZ contributing page is an overview of
+            many different contribution types available.
+            And for each of them it points to some resources
+            to help contributors learn how to go about
+            that contribution type.
+
+            I'll start with a small PR to ArviZ,
+            then show two closed PRs as examples
+            to better illustrate the PR dynamic.
+
+            Here I'll go over GitHub centric cases only,
+            docs and code to give a quick overview of the
+            PR _dynamic_ which is an important part of contributing.
+            But that doesn't mean you need to contribute to this.
+            Both examples are on ArviZ, but even if not the
+            same, the dynamic should be similar in most
+            open source projects.
+          </aside>
+        </section>
+
+        <section data-auto-animate>
+          <h2>How to contribute?</h2>
+          <p>Documentation fix<br>live example <a href="https://github.com/arviz-devs/arviz/issues/2174">ISSUE#2174</a></p>
+          <p><a href="https://python.arviz.org/en/latest/contributing/pr_tutorial.html">ArviZ PR Tutorial</a></p>
+
+          <aside class="notes">
+            Do the docstring fixes and show all git and github steps in
+            the process.
+
+            Show also how to commit again to update the PR once
+            it is open.
+          </aside>
+        </section>
+
+        <section data-auto-animate>
+          <h2>How to contribute?</h2>
+          <p>Documentation contribution<br>example <a href="https://github.com/arviz-devs/arviz/pull/2058">PR#2058</a></p>
+
+          <aside class="notes">
+            This PR started after discussing documentation improvements
+            on WriteTheDocs slack. Based on Gayathri's interests and skills
+            I suggested several doc improvements I had on the back of my mind,
+            and together we decided to work on the contributing guide
+            landing page.
+
+            After some discussion she submitted the PR which we merged
+            after some review comments we merged the PR.
+          </aside>
+        </section>
+
+        <section data-auto-animate>
+          <h2>How to contribute?</h2>
+          <p>Code contribution<br>example <a href="https://github.com/arviz-devs/arviz/pull/2001">PR#2001</a></p>
+
+          <aside class="notes">
+            This second PR example is a bugfix PR I submitted earlier this year.
+            I have been contributing to ArviZ extensively for 3 years, submitting
+            over 270 PRs.
+
+            I continue to use the PR template, wait for the checks to finish,
+            for someone else in the team to review (most of the times),
+            also went back and added a 2nd commit to update the changelog.
+
+            The template and checks can be intimidating, and any feedback
+            on how to make them more clear and friendly will be very welcome,
+            but they are there to help through the process!
+
+            It is also a good example and a public service announcement:
+            PRs more often than not require multiple commits.
+            You need to be ready for review comments, for some check to
+            fail and require changes...
+            If you expect your PRs to be a commit and then be done with
+            it you'll most probably be disappointed your PR might
+            even be closed without merging.
+          </aside>
+        </section>
+        </section>
+
+        <section>
+          <h2>Contributing to ArviZ and OSS</h2>
+          <h3>Social and Technical Sides</h3>
+          <p>at: <b>Data Umbrella</b></p>
+          <p>by: <b>Oriol Abril Pla</b></p>
+          <div>
+            <a href="https://oriolabrilpla.cat/"><i class="fa-solid fa-globe"></i></a>
+            <a href="https://github.com/OriolAbril"><i class="fa-brands fa-github"></i></a>
+            <a href="https://twitter.com/OriolAbril"><i class="fa-brands fa-twitter"></i></a>
+          </div>
+
+            <aside class="notes">
+            </aside>
+        </section>
+
+      </div>
+    </div>
+
+    <script src="reveal.js/dist/reveal.js"></script>
+    <link rel="stylesheet" href="reveal.js/plugin/highlight/zenburn.css">
+    <script src="reveal.js/plugin/highlight/highlight.js"></script>
+    <script src="reveal.js/plugin/math/math.js"></script>
+    <script src="reveal.js/plugin/notes/notes.js"></script>
+    <script>
+      Reveal.initialize({
+        plugins: [ RevealHighlight, RevealMath, RevealNotes ],
+        hash: false,
+        transition: 'none'
+      });
+    </script>
+
+  </body>
+</html>
